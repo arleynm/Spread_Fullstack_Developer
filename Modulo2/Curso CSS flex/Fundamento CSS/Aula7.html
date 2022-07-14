@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos -align content</title>
+
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            text-align: center;
+            margin: 5px;
+            color: white;
+        }
+        
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container strecth">
+        <div class="item">Tecnologia é um produto da ciência e da engenharia</div>
+        <div class="item">ecnologia é um produto </div>
+        <div class="item">Tecnologia é um produto da ciência</div>
+        <div class="item">Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos, métodos e técnicas</div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Tecnologia é um produto da ciência e da engenharia</div>
+        <div class="item">ecnologia é um produto </div>
+        <div class="item">Tecnologia é um produto da ciência</div>
+        <div class="item">Tecnologia é um produto da ciência e que e técnicas</div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+    </div>
+    
+
+    <p>flex-end</p>
+    <div class="container flex-start">
+        <div class="item">Tecnologia é um produto da ciência e da engenharia</div>
+        <div class="item">ecnologia é um produto </div>
+        <div class="item">Tecnologia é um produto da ciência</div>
+        <div class="item">Tecnologia é um produto da ciência e que e técnicas</div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Tecnologia é um produto da ciência e da engenharia</div>
+        <div class="item">ecnologia é um produto </div>
+        <div class="item">Tecnologia é um produto da ciência</div>
+        <div class="item">Tecnologia é um produto da ciência e que e técnicas</div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Tecnologia é um produto da ciência e da engenharia</div>
+        <div class="item">ecnologia é um produto </div>
+        <div class="item">Tecnologia é um produto da ciência</div>
+        <div class="item">Tecnologia é um produto da ciência e que e técnicas</div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Tecnologia é um produto da ciência e da engenharia</div>
+        <div class="item">ecnologia é um produto </div>
+        <div class="item">Tecnologia é um produto da ciência</div>
+        <div class="item">Tecnologia é um produto da ciência e que e técnicas</div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+        <div class="item">Tecnologia é um produto da ciência </div>
+    </div>
+</body>
+</html>
